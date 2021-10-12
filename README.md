@@ -180,7 +180,7 @@ plt.show()
 ## Çıktı
 ![RandomForestRegressor](https://user-images.githubusercontent.com/83179561/137007336-4619bd11-4619-4024-acae-5c1fe0ce2702.png)
 
-# Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)
+#<p style="text-align: center;"> Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)</p>
 ## R-Kare Yöntemi (R-Square)
 R-kare, girdi değişkenlerinizin tahmin edilen değişkenin varyansını açıkladığı bir ölçüdür.
 
