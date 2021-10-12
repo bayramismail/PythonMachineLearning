@@ -115,7 +115,7 @@ sc2=StandardScaler()
 
 y_olcekli = np.ravel(sc2.fit_transform(Y.reshape(-1,1)))
 
-## Svr
+## SVR
 from sklearn.svm import SVR
 
 svr_reg = SVR(kernel='rbf')
