@@ -1,5 +1,9 @@
 # PythonMachineLearning
-
+## Faydalı Kaynaklar
+### Support Vector Regression (SVR)
+#### 1.Kaynak: https://scikit-learn.org/0.18/auto_examples/svm/plot_svm_regression.html
+#### 2.Kaynak: https://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html
+#### 3.Kaynak: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
 ## Kütüphaneler
 
 import pandas as pd
@@ -95,3 +99,60 @@ lin_reg3=LinearRegression()
 lin_reg3.fit(x_poly3,y)
 ### Çıktı
 ![4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
+
+# Support Vector Regression (SVR)
+## Not
+Tüm kodlara ersimeniz  için Bolum2 dizinine gidin svr.py dosyasını açın.
+
+## verilerin olceklenmesi
+from sklearn.preprocessing import StandardScaler
+
+sc1=StandardScaler()
+
+x_olcekli = sc1.fit_transform(X)
+
+sc2=StandardScaler()
+
+y_olcekli = np.ravel(sc2.fit_transform(Y.reshape(-1,1)))
+
+## Svr
+from sklearn.svm import SVR
+
+svr_reg = SVR(kernel='rbf')
+
+svr_reg.fit(x_olcekli,y_olcekli)
+
+plt.scatter(x_olcekli,y_olcekli,color='red')
+
+plt.plot(x_olcekli,svr_reg.predict(x_olcekli),color='blue')
+
+print(svr_reg.predict([[11]]))
+
+print(svr_reg.predict([[6.6]]))
+
+# Karar Ağacı (Decision Tree) İle Tahmin
+## Not=Tüm kodlar bolum6 dizininde DecisionTree.py dosyasında
+from sklearn.tree import DecisionTreeRegressor
+
+r_dt=DecisionTreeRegressor(random_state=0)
+
+r_dt.fit(X,Y)
+
+Z=X+0.5
+
+K=X-0.4
+
+plt.scatter(X,Y,color="red")
+
+plt.plot(x,r_dt.predict(X),color="blue")
+
+plt.plot(x,r_dt.predict(Z),color="green")
+
+plt.plot(x,r_dt.predict(K),color="yellow")
+
+print(r_dt.predict([[11]]))
+
+print(r_dt.predict([[6.6]]))
+
+## Çıktı
+![Karar Ağacı](https://user-images.githubusercontent.com/83179561/136993501-69e6ac8d-0608-47eb-ad26-afd7f9810505.png)
