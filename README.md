@@ -115,7 +115,7 @@ sc2=StandardScaler()
 
 y_olcekli = np.ravel(sc2.fit_transform(Y.reshape(-1,1)))
 
-## Svr
+## SVR
 from sklearn.svm import SVR
 
 svr_reg = SVR(kernel='rbf')
@@ -156,3 +156,38 @@ print(r_dt.predict([[6.6]]))
 
 ## Çıktı
 ![Karar Ağacı](https://user-images.githubusercontent.com/83179561/136993501-69e6ac8d-0608-47eb-ad26-afd7f9810505.png)
+# Rassal Ağaçlar (Random Forest) ile Tahmin
+## Not= Tüm kodlar için Bolum7 dizinindeki RandomForest.py dosyasına  bakabilirsiniz.
+## Kod
+from sklearn.ensemble import RandomForestRegressor
+
+rf_reg=RandomForestRegressor(n_estimators = 10,random_state=0)
+
+rf_reg.fit(X,Y.ravel())
+
+print(rf_reg.predict([[6.6]]))
+
+plt.scatter(X,Y,color='red')
+
+plt.plot(X,rf_reg.predict(X),color='blue')
+
+plt.plot(X,rf_reg.predict(Z),color='green')
+
+plt.plot(x,r_dt.predict(K),color='yellow')
+
+plt.show()
+
+## Çıktı
+![RandomForestRegressor](https://user-images.githubusercontent.com/83179561/137007336-4619bd11-4619-4024-acae-5c1fe0ce2702.png)
+
+# Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)
+## R-Kare Yöntemi (R-Square)
+R-kare, girdi değişkenlerinizin tahmin edilen değişkenin varyansını açıkladığı bir ölçüdür.
+
+Varyans, noktaların birbirinden ne kadar uzaklaştığını belirleyen istatistikte bir ölçüdür, diğer bir deyişle, tek tek nokta ile beklenen değer arasındaki farkların karelerinin ortalaması olarak tanımlanır.
+
+R kare değeri ne kadar büyükse, model o kadar iyi demektir? Evet, Ancak daha yüksek R-Squared değeri her zaman modelin iyi veya kötü olduğu anlamına gelmez.
+
+### Formül
+![formul](https://user-images.githubusercontent.com/83179561/137032546-b6434ef3-1399-4012-83b6-5d2551cf8d9f.png)
+
