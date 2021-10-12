@@ -156,3 +156,26 @@ print(r_dt.predict([[6.6]]))
 
 ## Çıktı
 ![Karar Ağacı](https://user-images.githubusercontent.com/83179561/136993501-69e6ac8d-0608-47eb-ad26-afd7f9810505.png)
+# Rassal Ağaçlar (Random Forest) ile Tahmin
+## Not= Tüm kodlar için Bolum7 dizinindeki RandomForest.py dosyasına  bakabilirsiniz.
+## Kod
+from sklearn.ensemble import RandomForestRegressor
+
+rf_reg=RandomForestRegressor(n_estimators = 10,random_state=0)
+
+rf_reg.fit(X,Y.ravel())
+
+print(rf_reg.predict([[6.6]]))
+
+plt.scatter(X,Y,color='red')
+
+plt.plot(X,rf_reg.predict(X),color='blue')
+
+plt.plot(X,rf_reg.predict(Z),color='green')
+
+plt.plot(x,r_dt.predict(K),color='yellow')
+
+plt.show()
+
+## Çıktı
+![RandomForestRegressor](https://user-images.githubusercontent.com/83179561/137007336-4619bd11-4619-4024-acae-5c1fe0ce2702.png)
