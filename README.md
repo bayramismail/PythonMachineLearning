@@ -129,3 +129,30 @@ plt.plot(x_olcekli,svr_reg.predict(x_olcekli),color='blue')
 print(svr_reg.predict([[11]]))
 
 print(svr_reg.predict([[6.6]]))
+
+# Karar Ağacı (Decision Tree) İle Tahmin
+## Not= Bolum6 dizininde DecisionTree.py dosyasında
+from sklearn.tree import DecisionTreeRegressor
+
+r_dt=DecisionTreeRegressor(random_state=0)
+
+r_dt.fit(X,Y)
+
+Z=X+0.5
+
+K=X-0.4
+
+plt.scatter(X,Y,color="red")
+
+plt.plot(x,r_dt.predict(X),color="blue")
+
+plt.plot(x,r_dt.predict(Z),color="green")
+
+plt.plot(x,r_dt.predict(K),color="yellow")
+
+print(r_dt.predict([[11]]))
+
+print(r_dt.predict([[6.6]]))
+
+## Çıktı
+![Karar Ağacı](https://user-images.githubusercontent.com/83179561/136993501-69e6ac8d-0608-47eb-ad26-afd7f9810505.png)
