@@ -179,3 +179,6 @@ plt.show()
 
 ## Çıktı
 ![RandomForestRegressor](https://user-images.githubusercontent.com/83179561/137007336-4619bd11-4619-4024-acae-5c1fe0ce2702.png)
+
+# Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)
+...
