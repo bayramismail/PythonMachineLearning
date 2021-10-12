@@ -3,6 +3,7 @@ Bolum 2 Tahmin Çıktısı
 ![VeriTahmin](https://user-images.githubusercontent.com/83179561/136713626-6d674429-ef25-46a7-9427-49001f765c9f.png)
 
 Polinomal Regresyon
+
 Doğrusal Regresyon
 ![dogrusal model](https://user-images.githubusercontent.com/83179561/136959916-f495a92f-23cc-4e59-9f10-fa27682f5556.png)
 
