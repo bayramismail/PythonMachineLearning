@@ -3,12 +3,14 @@
 ## Kütüphaneler
 
 import pandas as pd
+
 import numpy as np
+
 import matplotlib.pyplot as plt
 
 ## Veri Yükleme 
-
 veriler= pd.read_csv('maaslar.csv')
+
 ### data frame dilimleme (slice)
 x=veriler.iloc[:,1:2]
 
@@ -33,13 +35,11 @@ lin_reg=LinearRegression()
 
 lin_reg.fit(x.values,y.values)
 
-### Çıktısı 
-![dogrusal model](https://user-images.githubusercontent.com/83179561/136959916-f495a92f-23cc-4e59-9f10-fa27682f5556.png)
-## Polinomal Regresyon
+# Polinomal Regresyon
 
-### 2.Derece Polinom 
+## 2.Derece Polinom 
 
-#### ornek Kod
+### Ornek Kod
 from sklearn.preprocessing import PolynomialFeatures
 
 poly_reg=PolynomialFeatures(degree=2)
@@ -50,10 +50,39 @@ lin_reg2=LinearRegression()
 
 lin_reg2.fit(x_poly,y)
 
-Çıktısı =![2 derece polinom](https://user-images.githubusercontent.com/83179561/136959978-b1d406c5-671e-4db3-9150-b70b0d837104.png)
-
 ### 4.Derece Polinom
 
-#### ornek Kod
-Çıktısı =![4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
+### Ornek Kod
+
+poly_reg3=PolynomialFeatures(degree=4)
+
+x_poly3=poly_reg3.fit_transform(X)
+
+lin_reg3=LinearRegression()
+
+lin_reg3.fit(x_poly3,y)
+
+[4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
+
+# Görselleştirme
+## Doğrusal Regression
+### Kod 
+plt.scatter(X,Y,color="red")
+
+plt.plot(x,lin_reg.predict(X),color="blue")
+
+plt.show()
+
+### Çıktı
+![dogrusal model](https://user-images.githubusercontent.com/83179561/136959916-f495a92f-23cc-4e59-9f10-fa27682f5556.png)
+## Polinomal Regresyon 2.Derece
+### Kod
+plt.scatter(X,Y,color="red")
+
+plt.plot(X,lin_reg2.predict(poly_reg.fit_transform(X)),color="blue")
+
+plt.show()
+
+### Çıktı
+![2 derece polinom](https://user-images.githubusercontent.com/83179561/136959978-b1d406c5-671e-4db3-9150-b70b0d837104.png)
 
