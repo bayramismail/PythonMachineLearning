@@ -62,8 +62,6 @@ lin_reg3=LinearRegression()
 
 lin_reg3.fit(x_poly3,y)
 
-[4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
-
 # Görselleştirme
 ## Doğrusal Regression
 ### Kod 
@@ -86,3 +84,14 @@ plt.show()
 ### Çıktı
 ![2 derece polinom](https://user-images.githubusercontent.com/83179561/136959978-b1d406c5-671e-4db3-9150-b70b0d837104.png)
 
+## Polinomal Regresyon 4.Derece
+### Kod
+poly_reg3=PolynomialFeatures(degree=4)
+
+x_poly3=poly_reg3.fit_transform(X)
+
+lin_reg3=LinearRegression()
+
+lin_reg3.fit(x_poly3,y)
+### Çıktı
+![4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
