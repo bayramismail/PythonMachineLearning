@@ -131,7 +131,7 @@ print(svr_reg.predict([[11]]))
 print(svr_reg.predict([[6.6]]))
 
 # Karar Ağacı (Decision Tree) İle Tahmin
-## Not= Bolum6 dizininde DecisionTree.py dosyasında
+## Not=Tüm kodlar bolum6 dizininde DecisionTree.py dosyasında
 from sklearn.tree import DecisionTreeRegressor
 
 r_dt=DecisionTreeRegressor(random_state=0)
