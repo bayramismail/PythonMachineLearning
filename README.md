@@ -188,6 +188,6 @@ Varyans, noktaların birbirinden ne kadar uzaklaştığını belirleyen istatist
 
 R kare değeri ne kadar büyükse, model o kadar iyi demektir? Evet, Ancak daha yüksek R-Squared değeri her zaman modelin iyi veya kötü olduğu anlamına gelmez.
 
-### Formül=
+### Formül
 ![formul](https://user-images.githubusercontent.com/83179561/137032546-b6434ef3-1399-4012-83b6-5d2551cf8d9f.png)
 
