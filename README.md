@@ -181,4 +181,13 @@ plt.show()
 ![RandomForestRegressor](https://user-images.githubusercontent.com/83179561/137007336-4619bd11-4619-4024-acae-5c1fe0ce2702.png)
 
 # Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)
-...
+## R-Kare Yöntemi (R-Square)
+R-kare, girdi değişkenlerinizin tahmin edilen değişkenin varyansını açıkladığı bir ölçüdür.
+
+Varyans, noktaların birbirinden ne kadar uzaklaştığını belirleyen istatistikte bir ölçüdür, diğer bir deyişle, tek tek nokta ile beklenen değer arasındaki farkların karelerinin ortalaması olarak tanımlanır.
+
+R kare değeri ne kadar büyükse, model o kadar iyi demektir? Evet, Ancak daha yüksek R-Squared değeri her zaman modelin iyi veya kötü olduğu anlamına gelmez.
+
+### Formül=
+![formul](https://user-images.githubusercontent.com/83179561/137032546-b6434ef3-1399-4012-83b6-5d2551cf8d9f.png)
+
