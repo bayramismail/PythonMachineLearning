@@ -99,3 +99,33 @@ lin_reg3=LinearRegression()
 lin_reg3.fit(x_poly3,y)
 ### Çıktı
 ![4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
+
+# Support Vector Regression (SVR)
+##Not
+Tüm kodlara ersimeniz  için Bolum2 dizinine gidin svr.py dosyasını açın.
+
+## verilerin olceklenmesi
+from sklearn.preprocessing import StandardScaler
+
+sc1=StandardScaler()
+
+x_olcekli = sc1.fit_transform(X)
+
+sc2=StandardScaler()
+
+y_olcekli = np.ravel(sc2.fit_transform(Y.reshape(-1,1)))
+
+## Svr
+from sklearn.svm import SVR
+
+svr_reg = SVR(kernel='rbf')
+
+svr_reg.fit(x_olcekli,y_olcekli)
+
+plt.scatter(x_olcekli,y_olcekli,color='red')
+
+plt.plot(x_olcekli,svr_reg.predict(x_olcekli),color='blue')
+
+print(svr_reg.predict([[11]]))
+
+print(svr_reg.predict([[6.6]]))
