@@ -4,7 +4,7 @@ Bolum 2 Tahmin Çıktısı
 
 Polinomal Regresyon
 
-Doğrusal Regresyon
+Doğrusal Regresyon 
 Çıktısı =![dogrusal model](https://user-images.githubusercontent.com/83179561/136959916-f495a92f-23cc-4e59-9f10-fa27682f5556.png)
 
 2.Derece Polinom
