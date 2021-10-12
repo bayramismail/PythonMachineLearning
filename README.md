@@ -101,7 +101,7 @@ lin_reg3.fit(x_poly3,y)
 ![4  derece polinom](https://user-images.githubusercontent.com/83179561/136960088-2bab6585-1d94-4728-9fe9-ab4a856cad0a.png)
 
 # Support Vector Regression (SVR)
-##Not
+## Not
 Tüm kodlara ersimeniz  için Bolum2 dizinine gidin svr.py dosyasını açın.
 
 ## verilerin olceklenmesi
