@@ -1,12 +1,18 @@
 # PythonMachineLearning
-## Metodoloji
-![metodoloji](https://user-images.githubusercontent.com/83179561/137203424-55fde4f2-3930-45fd-b9fc-fc95dfd81077.png)
 
 ## Faydalı Kaynaklar
 ### Support Vector Regression (SVR)
 #### 1.Kaynak: https://scikit-learn.org/0.18/auto_examples/svm/plot_svm_regression.html
 #### 2.Kaynak: https://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html
 #### 3.Kaynak: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
+
+## Metodoloji
+![metodoloji](https://user-images.githubusercontent.com/83179561/137203424-55fde4f2-3930-45fd-b9fc-fc95dfd81077.png)
+
+## Veri Tipleri
+
+![veri tipleri](https://user-images.githubusercontent.com/83179561/137203882-2738bdf9-b418-4114-838b-3c38cabbdc06.png)
+
 ## Kütüphaneler
 
 import pandas as pd
