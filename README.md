@@ -6,6 +6,9 @@
 #### 2.Kaynak: https://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html
 #### 3.Kaynak: https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
 
+### LogisticRegression
+#### 1.Kaynak: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+
 ## Metodoloji
 ![metodoloji](https://user-images.githubusercontent.com/83179561/137203424-55fde4f2-3930-45fd-b9fc-fc95dfd81077.png)
 
