@@ -182,6 +182,7 @@ plt.show()
 
 # Tahmin Algoritmalarının Değerlendirilmesi (Evaluation of Predictions)
 ## R-Kare Yöntemi (R-Square)
+### Not = Tüm kodları görüntülemek için Bolum7 dizininin altında bulunan r2_score.py dosyasına bakın 
 R-kare, girdi değişkenlerinizin tahmin edilen değişkenin varyansını açıkladığı bir ölçüdür.
 
 Varyans, noktaların birbirinden ne kadar uzaklaştığını belirleyen istatistikte bir ölçüdür, diğer bir deyişle, tek tek nokta ile beklenen değer arasındaki farkların karelerinin ortalaması olarak tanımlanır.
@@ -191,3 +192,36 @@ R kare değeri ne kadar büyükse, model o kadar iyi demektir? Evet, Ancak daha 
 ### Formül
 ![formul](https://user-images.githubusercontent.com/83179561/137032546-b6434ef3-1399-4012-83b6-5d2551cf8d9f.png)
 
+### Kod
+from sklearn.metrics import r2_score
+
+print("Random Forest R2 değeri ")
+
+print(r2_score(Y, rf_reg.predict(X)))
+
+print(r2_score(Y, rf_reg.predict(K)))
+
+print(r2_score(Y, rf_reg.predict(Z)))
+
+print("Linear R2 değeri ")
+
+print(r2_score(Y, lin_reg.predict(X)))
+
+
+print("Polynomial R2 değeri ")
+
+print(r2_score(Y, lin_reg2.predict(poly_reg.fit_transform(X))))
+
+
+print("SVR R2 değeri ")
+
+print(r2_score(y_olcekli, svr_reg.predict(x_olcekli)))
+
+
+print("Decision Tree  R2 değeri ")
+
+print(r2_score(Y, r_dt.predict(X)))
+
+## Düzeltilmiş R-Kare(Adjusted R-Kare) Yöntemi
+### Formül
+![düzeltilmiş r-kare yöntemi](https://user-images.githubusercontent.com/83179561/137122181-08bbf5a5-4368-44da-83a7-d0d91e1d9d01.png)
