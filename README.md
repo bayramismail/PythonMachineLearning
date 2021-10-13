@@ -190,4 +190,6 @@ R kare değeri ne kadar büyükse, model o kadar iyi demektir? Evet, Ancak daha 
 
 ### Formül
 ![formul](https://user-images.githubusercontent.com/83179561/137032546-b6434ef3-1399-4012-83b6-5d2551cf8d9f.png)
-
+## Düzeltilmiş R-Kare(Adjusted R-Kare) Yöntemi
+### Formül
+![düzeltilmiş r-kare yöntemi](https://user-images.githubusercontent.com/83179561/137122181-08bbf5a5-4368-44da-83a7-d0d91e1d9d01.png)
