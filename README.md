@@ -1,4 +1,7 @@
 # PythonMachineLearning
+## Metodoloji
+![metodoloji](https://user-images.githubusercontent.com/83179561/137203424-55fde4f2-3930-45fd-b9fc-fc95dfd81077.png)
+
 ## Faydalı Kaynaklar
 ### Support Vector Regression (SVR)
 #### 1.Kaynak: https://scikit-learn.org/0.18/auto_examples/svm/plot_svm_regression.html
@@ -225,3 +228,9 @@ print(r2_score(Y, r_dt.predict(X)))
 ## Düzeltilmiş R-Kare(Adjusted R-Kare) Yöntemi
 ### Formül
 ![düzeltilmiş r-kare yöntemi](https://user-images.githubusercontent.com/83179561/137122181-08bbf5a5-4368-44da-83a7-d0d91e1d9d01.png)
+
+## Tahmin Modelleri
+
+![tahmin modeller](https://user-images.githubusercontent.com/83179561/137203487-6d16643b-6e39-412c-865c-2198ae82c7ce.png)
+
+![tahmin modeller2](https://user-images.githubusercontent.com/83179561/137203501-c20c8126-b877-41c4-88af-9d34102f8af2.png)
