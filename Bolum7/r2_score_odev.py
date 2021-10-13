@@ -14,7 +14,7 @@ import statsmodels.api as sm
 # veri yukleme
 veriler = pd.read_csv('maaslar_yeni.csv')
 
-x = veriler.iloc[:,2:5]
+x = veriler.iloc[:,2:3,]
 y = veriler.iloc[:,5:]
 X = x.values
 Y = y.values
