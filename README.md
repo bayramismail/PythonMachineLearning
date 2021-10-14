@@ -9,6 +9,9 @@
 ### LogisticRegression
 #### 1.Kaynak: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 
+### K-NN - K Nearest Neighborhood (K En Yakın Komşu) algoritması Kaynak
+#### 1.Kaynak: https://bilgisayarkavramlari.com/2008/11/17/knn-k-nearest-neighborhood-en-yakin-k-komsu/?highlight=Knn
+
 ## Metodoloji
 ![metodoloji](https://user-images.githubusercontent.com/83179561/137203424-55fde4f2-3930-45fd-b9fc-fc95dfd81077.png)
 
